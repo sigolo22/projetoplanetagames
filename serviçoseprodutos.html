@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cadastro de Produtos </title>
+		
+		<style>
+			
+			#formulario{
+				text-align: left;
+				margin: 0;
+				font-family: Tahoma;
+			}
+			
+			.direita{
+				float: right;
+				width: 50%;
+			}
+			
+			.esquerda{
+				float: left;
+				width: 50%;
+			}
+			
+			#formulario label{
+				line-height:30px;
+				text-align: left;
+				color: #363636;
+			}
+			
+			#formulario input{
+				padding: 9px;
+				border: 1px solid #CCCCCC;
+				background: #E8EFE4;
+				border-radius: 4px;
+				color: #363636;
+			}
+			
+			#formulario .botao{
+				background-color: #45543D;
+				color: #FFF;
+			}
+			
+			#formulario .botao:hover{
+				background-color: #354030;
+			}
+			
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<center><h1> Cadastro de Produtos </h1></center>
+		<hr>
+		
+		<div id="formulario">
+			
+			<form action="salvarproduto.php" method = "post">
+			
+				<div class="data direita">
+					<label for="dt_val"> Nome: </label><br>
+					<input type="text" name="nome" size="25" placeholder="__/__/__">
+				</div>
+				
+				<div class="esquerda">
+					<label for="nome"> Gênero: </label><br>
+					<input type="text" name="genero" size="35" placeholder="Nome">
+				</div>
+				
+				<div class="esquerda">
+					<label for="tipo"> Empresa desenvolvedora: </label><br>
+					<input type="text" name="empresadesenvolvedora" size="35" placeholder="Tipo de produto">
+				</div>
+				
+				<div class="direita">
+					<label for="valor"> Data de Lançamento: </label><br>
+					<input type="text" name="datadelancamento"size="35" placeholder="Valor">
+				</div>
+				
+				
+				<div class="direita">
+					<label for="obs"> Valor: </label><br>
+					<input type="text" name="valor" size="35" placeholder="Observações">
+				</div>
+				
+				<div class="esquerda">
+					<label for="forn"> Observações: </label><br>
+					<input type="text"  name="observacoes" size="35" placeholder="Fornecedor">
+				</div>
+				
+				</div>
+				
+				<br>
+				
+				<input type="submit" value = "Cadastrar" class="botao" style="margin-top: 20px">
+				<input type="reset" value = "Limpar" class="botao">
+				
+				
+				
+			</form>
+			
+		</div>
+	
+	</body>
+</html>

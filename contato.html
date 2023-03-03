@@ -1,0 +1,167 @@
+<html>
+
+<head>
+	<title>Contato</title>
+	<link rel="stylesheet" href="stylecontato.css" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="icon" type="imagem/png" href="img/logocortada.png" width="50px" height="50px" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="icons8-globo-16.png" type="image/x-icon">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+		@import url('https://fonts.googleapis.com/css?family=Quando');
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+		.content {
+			justify-content: center
+		}
+
+		.contato {
+			width: 500px;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column
+		}
+
+		.field {
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #828282;
+			border-radius: 8px;
+			font-family: Roboto, Helvetica, sans-serif;
+			font-size: 16px;
+		}
+
+		.field2 {
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid gold;
+			border-radius: 8px;
+			color: gold;
+			font-family: Roboto, Helvetica, sans-serif;
+			font-size: 16px;
+			background-color: black;
+		}
+
+		textarea {
+			height: 150px;
+			min-width: 500px;
+			max-width: 500px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="total">
+
+		<div id="menu">
+			<div id="logo">
+				<a href="index.html">
+					<img src="imagens/logo.png" width="110px" height="60px">
+				</a>
+			</div>
+			<div id="links">
+				<a href="index.html"> HOME </a>
+				<a href="quemsomos.html"> QUEM SOMOS </a>
+				<a href="serviços.html"> SERVIÇOS </a>
+				<a href="contato.html" style="color:dodgerblue; border-bottom: solid dodgerblue 3px;"> CONTATOS </a>
+				<a id="login" href="login.php">LOGIN</a>
+			</div>
+		</div>
+
+		<div id="banner" style="margin-bottom: 2%">
+			<img src="imagensquemsomos/equipecontato.jpg" width="1500px;" height="600px;">
+		</div>
+		<div id="topofale">
+			<h1></h1>
+		</div>
+		<div id="form">
+			<section class="content">
+				<div class="contato">
+
+					<font size="4" face="Roboto" color="white">
+						Formulário<br /> <br /> </font>
+
+					<form class="form" method="post" action="./email.php">
+
+						<input class="field" name="name" placeholder="Nome">
+
+						<input class="field" name="email" placeholder="Email">
+
+						<textarea class="field" name="message" placeholder="Digite aqui sua mensagem">	 </textarea>
+
+						<input class="field2" type="submit" value="Enviar" style="color:dodgerblue; border: solid">
+					</form>
+				</div>
+		</div>
+
+		<div id="icons">
+			<div id="icons2"><img src="imagens/instagram.jfif">
+				<p>@PlanetaGames</p>
+			</div>
+			<div id="icons2"><img src="imagens/facebook.png">
+				<p>Planeta Games</p>
+			</div>
+			<div id="icons2"><img src="imagens/telefone.jfif">
+				<p>(21) 95433-1267</p>
+			</div>
+			<div id="icons2"><img src="imagens/gmail.png">
+				<p>planetagames@gmail.com</p>
+			</div>
+		</div>
+
+		<hr class="hr" />
+		<div id="contato_t">
+			<h1>Localização</h1>
+		</div>
+
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.279460544278!2d-43.23264858539865!3d-22.9767
+		4884614684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5b700b6191d%3A0xb1ae310fe7c55482!2sR.+Marqu%C3%AAs
+		+de+S%C3%A3o+Vicente%2C+124+-+G%C3%A1vea%2C+Rio+de+Janeiro+-+RJ%2C+22451-041%2C+Brasil!5e0!3m2!1spt-BR!2sus!4v156323
+		1896395!5m2!1spt-BR!2sus" width="1024px" height="500px" frameborder="0" style="float:left" margin-left:"6%";
+				margin-to p: "1%" ; border:"0"; border-radius: "15px;" allowfullscreen></iframe>
+
+		</div>
+
+
+		<div id="rodape">
+
+			<div id="r1">
+
+			</div>
+
+			<div id="r2">
+				<div id="txt">
+					<br>
+					<p>Contato<br>
+					</p>
+					<h3>Planeta Games<br>
+						Tel (21) 5725-4222</h3>
+				</div>
+
+				<li><img src="imagens/telefone.jfif" width="26px" height="26px">
+					<img src="imagens/instagram.jfif" width="26px" height="26px">
+					<img src="imagens/facebook.png" width="26px" height="26px">
+					<img src="imagens/gmail.png" width="26px" height="26px">
+				</li>
+
+			</div>
+
+			<div id="r3">
+				<font face="Roboto" color="#808080">
+					<p>Desenvolvido por Hypertech. &#169 Copyright 2020; Todos os direitos reservados </p>
+				</font>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<html>
+<head> 
+<link rel="shortcut icon" href="icons8-globo-16.png" type="image/x-icon">	
+<title>Planeta Games</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="icon" type="imagem/png" href="img/logocortada.png" width="50px" height="50px" />
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+/*Slider*/
+#slider {overflow: hidden;}
+#slider figure {position: relative;width: 625%;margin: 0;left: 0;animation: 20s slider infinite;}
+#slider figure img {width: 16%;float: left;}
+
+@keyframes slider {
+	0% {left: 0;}
+	20% {left: 0;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100%{left: -400%;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="total">
+
+<div id="topo">
+
+      <div id="menu">
+		<div id="logo">
+		<a href="index.html">
+		<img src="imagens/logo.png" width="110px" height="60px">
+		</a>
+		</div>
+		<div id="links">
+		 <a href="index.html" style="color:dodgerblue; border-bottom: solid dodgerblue 3px;"> HOME </a>
+		 <a href="quemsomos.html"> QUEM SOMOS </a>
+		 <a href="serviços.html"> SERVIÇOS </a>
+		 <a href="contato.html"> CONTATO </a>
+		 <a id="login" href="login.php">LOGIN</a>
+      </div>
+	  </div>
+	  
+	 
+</div>
+
+<div id="banner">
+   	
+	<div id="slider">
+			<figure>
+			<img src="imagens/imagem2.png" alt="grovestreet" width="1500px" height="600px">
+			<img src="imagens/imagem3.jpg" alt="escadariaselaron" width="1500" height="600">
+			<img src="imagens/imagem4.jpg" alt="jardimbotanico" width="1500" height="600">
+			<img src="imagens/imagem5.jpg" alt="paodeaçucar" width="1500" height="600">
+			<img src="imagensquemsomos/planetagames.gif" alt="parquelage" width="1500" height="600">
+			</figure>
+	</div>
+
+	<script>
+		var myIndex=0
+		carousel();
+		
+		function carousel(){
+		var i;
+		var x= document.getElementsByClassName("mySlides");
+		for(i=0;i < x.length; i++){
+		  x[i].style.display ="none";
+		}
+		myIndex++;
+		if(myIndex > x.length) {myIndex=1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 4000);//Change image every 0,10 seconds	 
+		
+		}
+		</script>
+	</div>
+<br>	
+</div>
+</div>
+<br><br>
+<hr class="hr"/>
+	<div id="painel1">
+			<img src="imagens/readdeadrevolver.jpg"  width="370" height="250" style="margin-left:8%">
+			<img src="imagens/godofwar.jpg" width="370" height="250" style="margin-left:8%">
+			<img src="imagens/Crash.png" width="370" height="250" style="margin-left:8%">
+			</div>
+	</div>
+		<br><br>
+		<hr class="hr"/>
+		<div id="painel2">
+			<img src="imagens/batman.jpg" width="370" height="250" style="margin-left:8%">
+			<img src="imagens/midnightclub.jpg" width="370" height="250" style="margin-left:8%">
+			<img src="imagens/fifa14.jpg" width="370" height="250" style="margin-left:8%">
+			</div>
+	</div>
+	<br><br>
+	<hr class="hr"/>
+	<div id="painel3">
+		<img src="imagens/hitman blood money.jpg" width="370" height="250" style="margin-left:8%">
+		<img src="imagens/medalhadeonra.jpg" width="370" height="250" style="margin-left:8%">
+		<img src="imagens/residentevil.jfif" width="370" height="250" style="margin-left:8%">
+		</div>
+		
+</div>
+		
+	 <div id="rodape">
+	 
+	  <div id="r1">
+	
+	  </div>  
+	  
+	  <div id="r2">
+	  <div id="txt">
+	  <br>
+	  <p>Contatos<br>
+	 </p>
+	  <h3>Planeta Games<br>
+	  Tel (21) 5725-4222</h3>
+	  </div>
+	
+		<li><img src="imagens/telefone.jfif" width="26px" height="26px"> 
+	   	<img src="imagens/instagram.jfif" width="26px" height="26px">  
+		<img src="imagens/facebook.png" width="26px" height="26px"> 
+		<img src="imagens/gmail.png" width="26px" height="26px">  </li>
+		  
+	  </div>
+	  	  
+	  <div id="r3"> <font face="Roboto" color="#808080">
+	  <p>Desenvolvido por Planeta Games. © Copyright 2020; Todos os direitos reservados </p> </font>
+	  </div>
+	   	 
+	 </div>
+	 	 
+</div>	 
+</body>
+</html>
